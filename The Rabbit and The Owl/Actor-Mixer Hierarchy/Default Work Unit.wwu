@@ -27,6 +27,25 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Ladder Left Foot" ID="{E784E278-10DE-4FD5-9961-A26D8DA0AE2A}" ShortID="114144555">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{74EDCDD5-B00E-4FB2-AAB3-23DF10AC84DE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
