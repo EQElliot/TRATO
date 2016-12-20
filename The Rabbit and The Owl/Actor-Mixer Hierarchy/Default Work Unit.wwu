@@ -56,6 +56,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Ladder Left Foot" ID="{E784E278-10DE-4FD5-9961-A26D8DA0AE2A}" ShortID="114144555">
 									<PropertyList>
+<<<<<<< HEAD
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
@@ -75,6 +76,15 @@
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="20"/>
+=======
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4940C002-C83F-4863-AE12-178466E31F7E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+>>>>>>> refs/remotes/origin/master
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -195,6 +205,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ladder Right Foot" ID="{30B05BE2-5B04-4ADC-A7E4-258A9863867E}" ShortID="528313806">
 									<PropertyList>
+<<<<<<< HEAD
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
@@ -211,6 +222,12 @@
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{F8ED3B00-A4BE-4878-9B47-6443E1E30C07}">
+=======
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5A96494C-50E7-4764-ADD0-2DA0BBF1EB0E}">
+>>>>>>> refs/remotes/origin/master
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="20"/>
@@ -219,6 +236,14 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+<<<<<<< HEAD
+=======
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+>>>>>>> refs/remotes/origin/master
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
