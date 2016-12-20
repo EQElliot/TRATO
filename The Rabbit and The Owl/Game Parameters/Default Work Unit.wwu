@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7790663A-BDF9-4EC5-BB74-52A9CFDAEA7F}" SchemaVersion="72">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{7790663A-BDF9-4EC5-BB74-52A9CFDAEA7F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7790663A-BDF9-4EC5-BB74-52A9CFDAEA7F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Ladder_Posititon_Parameter" ID="{D5EC38D6-8CB0-4D8F-ADBA-1512B75899CC}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

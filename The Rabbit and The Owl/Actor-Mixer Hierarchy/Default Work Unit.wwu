@@ -15,6 +15,34 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Ladder" ID="{43E301FD-E982-4978-9099-AC1718CE15CE}" ShortID="36075782">
 							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{6B452ABF-0B52-4777-8722-D36F08A683BB}" ShortID="237881093">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Ladder_Posititon_Parameter" ID="{D5EC38D6-8CB0-4D8F-ADBA-1512B75899CC}" WorkUnitID="{7790663A-BDF9-4EC5-BB74-52A9CFDAEA7F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E0D1EB53-C95E-4A1B-9BEF-679BB76FA336}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>2413</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
@@ -28,6 +56,27 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Ladder Left Foot" ID="{E784E278-10DE-4FD5-9961-A26D8DA0AE2A}" ShortID="114144555">
 									<PropertyList>
+<<<<<<< HEAD
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{685AD4C1-9535-4B74-842B-F80930F8C5EA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="40"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{74EDCDD5-B00E-4FB2-AAB3-23DF10AC84DE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+=======
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -35,6 +84,7 @@
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Min" Type="Real64" Value="-20"/>
+>>>>>>> refs/remotes/origin/master
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -54,13 +104,130 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ladder Left Foot 2" ID="{C5876FBC-E3E2-4E15-8B34-EF55EFDA5F96}" ShortID="915420939" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>28</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>43</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ladder Left Foot 2" ID="{958D9E8F-260F-438F-9D5B-B790E6DF13DB}" ShortID="4481529">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.3302380952381"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.00845238095237"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ladder Left Foot.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ladder Left Foot 2" ID="{958D9E8F-260F-438F-9D5B-B790E6DF13DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ladder Left Foot 1" ID="{AC7F5141-1725-4CF8-86C0-D1084CAA6020}" ShortID="213922699" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ladder Left Foot 1" ID="{6932F1E4-9FA7-4E32-99FD-4039C30CD1AF}" ShortID="701257208">
+													<PropertyList>
+														<Property Name="TrimEnd" Type="Real64" Value="1.33023809523809"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+														</Reference>
+													</ReferenceList>
+													<Language>SFX</Language>
+													<AudioFile>Ladder Left Foot.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ladder Left Foot 1" ID="{6932F1E4-9FA7-4E32-99FD-4039C30CD1AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ladder Left Foot 3" ID="{A927521D-F399-4DA8-A73A-F1DD75F08A9C}" ShortID="1064055873" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>23</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ladder Left Foot 3" ID="{76B2E59E-4E84-4437-A7FC-987B84FB522D}" ShortID="606610328">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="2.99964285714286"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+														</Reference>
+													</ReferenceList>
+													<Language>SFX</Language>
+													<AudioFile>Ladder Left Foot.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ladder Left Foot 3" ID="{76B2E59E-4E84-4437-A7FC-987B84FB522D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ladder Right Foot" ID="{30B05BE2-5B04-4ADC-A7E4-258A9863867E}" ShortID="528313806">
 									<PropertyList>
+<<<<<<< HEAD
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9B6C733C-2226-4C84-929A-3F4F8A904F95}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="40"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F8ED3B00-A4BE-4878-9B47-6443E1E30C07}">
+=======
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{5A96494C-50E7-4764-ADD0-2DA0BBF1EB0E}">
+>>>>>>> refs/remotes/origin/master
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="20"/>
@@ -69,11 +236,14 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+<<<<<<< HEAD
+=======
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
 											</ValueList>
 										</Property>
+>>>>>>> refs/remotes/origin/master
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -83,8 +253,88 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ladder Right Foot 1" ID="{802D3884-8948-443F-BCC0-AB4BE91BF474}" ShortID="307146926" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ladder Right Foot" ID="{FEBCEECC-E857-4243-B76C-DB05FA8AE2DB}" ShortID="208052598">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.57702380952381"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.9997619047619"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ladder Right Foot.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="230361390"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ladder Right Foot" ID="{FEBCEECC-E857-4243-B76C-DB05FA8AE2DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ladder Right Foot 2" ID="{99170DB5-EC40-4155-9788-ADC6ED12DE0A}" ShortID="491527117" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ladder Right Foot" ID="{5AFB6488-46E0-4D18-A6AF-86C48020E5E9}" ShortID="402913260">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.9997619047619"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.21988095238095"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ladder Right Foot.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ladder Right Foot" ID="{5AFB6488-46E0-4D18-A6AF-86C48020E5E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ladder Right Foot 3" ID="{BBD9BFF3-15AE-4F98-818C-ED0E538DED44}" ShortID="58258130" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ladder Right Foot" ID="{972745A0-1E00-450A-B2CE-AA03CD8E1F48}" ShortID="230361390">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="3.69119047619048"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ladder Right Foot.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="208052598"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ladder Right Foot" ID="{972745A0-1E00-450A-B2CE-AA03CD8E1F48}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Ladder Left Foot" ID="{E784E278-10DE-4FD5-9961-A26D8DA0AE2A}"/>
+								<ItemRef Name="Ladder Right Foot" ID="{30B05BE2-5B04-4ADC-A7E4-258A9863867E}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
@@ -97,6 +347,226 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Lever" ID="{30C2B7A2-14AD-4872-B44B-CAD6BDECA5FE}" ShortID="61485070">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Lever Forward" ID="{CBF32975-2701-427A-8B33-0F9077EDA18D}" ShortID="854203767" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lever Forward" ID="{B47DF5EB-23BE-494D-BBB1-E961319A7ED3}" ShortID="854589590">
+											<Language>SFX</Language>
+											<AudioFile>Lever Forward.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lever Forward" ID="{B47DF5EB-23BE-494D-BBB1-E961319A7ED3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lever Backwards" ID="{BDB7D3C1-3ACE-4A5A-B1C9-743395FB18D1}" ShortID="646839817" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lever Backwards" ID="{424B571A-AD67-4317-AF89-6B56EA921BD9}" ShortID="133126158">
+											<Language>SFX</Language>
+											<AudioFile>Lever Backwards.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lever Backwards" ID="{424B571A-AD67-4317-AF89-6B56EA921BD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Environment" ID="{C13D48EA-0A3D-493C-BF35-285476CD6099}" ShortID="1044860779">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Character_foley" ID="{EEA86C2A-FD32-4FC9-8EFF-0011F38A719C}" ShortID="838062811">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Jumping" ID="{5024E690-CE97-48C4-A0A9-05858EBB2BEC}" ShortID="86546111">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="New Switch Container" ID="{5ED0A096-3ECE-45F3-8183-E81DCD73209B}" ShortID="49605398">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jump" ID="{D97A81F9-141D-40C8-83CE-98854758D104}" ShortID="437265646" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jump" ID="{3481FF53-7AA5-47BF-898F-2E57C71EFE7E}" ShortID="316077075">
+													<Language>SFX</Language>
+													<AudioFile>Jump.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jump" ID="{3481FF53-7AA5-47BF-898F-2E57C71EFE7E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jump_1" ID="{378096B8-EC85-4DD0-8993-0E747094B552}" ShortID="607129723" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jump_1" ID="{AB5D3737-508F-461A-A516-D58C439E5578}" ShortID="716148198">
+													<Language>SFX</Language>
+													<AudioFile>Jump_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jump_1" ID="{AB5D3737-508F-461A-A516-D58C439E5578}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Land" ID="{8D66CEAA-32F6-4AAA-B120-8D4808A0A244}" ShortID="902658336" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Land" ID="{C2C53D87-6728-480B-B1E3-1114BFCE1347}" ShortID="814753938">
+													<Language>SFX</Language>
+													<AudioFile>Land.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Land" ID="{C2C53D87-6728-480B-B1E3-1114BFCE1347}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Land" ID="{8D66CEAA-32F6-4AAA-B120-8D4808A0A244}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Jump_1" ID="{378096B8-EC85-4DD0-8993-0E747094B552}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Jump" ID="{D97A81F9-141D-40C8-83CE-98854758D104}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Menu" ID="{59906C52-0BB0-49FE-BF5E-AB6CDF0D534D}" ShortID="128652016">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Switch Characters woosh" ID="{0F949570-E630-4AA8-BCDE-F889FE851983}" ShortID="187129921" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Switch Characters 1" ID="{EC586767-0438-4130-9B5B-BC0B86D79DF6}" ShortID="807751186">
+									<Language>SFX</Language>
+									<AudioFile>Switch Characters 1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Switch Characters 1" ID="{EC586767-0438-4130-9B5B-BC0B86D79DF6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Switch Characters subtle" ID="{DD5B86FC-7A1F-481F-9539-C5174249A639}" ShortID="27940515" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5508011F-B0E5-493E-A7A6-119507AD38DB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDDC646-CB7C-4157-BEEC-502FFAD7A670}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Switch Characters 2" ID="{C893F260-002B-4D38-B4FE-307E76486F47}" ShortID="545611846">
+									<Language>SFX</Language>
+									<AudioFile>Switch Characters 2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Switch Characters 2" ID="{C893F260-002B-4D38-B4FE-307E76486F47}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
